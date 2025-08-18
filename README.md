@@ -261,7 +261,7 @@ Temos uma roadmap ativa! Sugestões são bem-vindas:
 - **Java CompletableFuture** - Operações assíncronas
 
 ### 🙏 Agradecimentos Especiais
-- Comunidade **Spigot/Paper** pelo suporte técnico
+- Comunidade **ZappyCraft** pelo suporte técnico
 - **Beta testers** que ajudaram no desenvolvimento
 - Todos os usuários que reportaram bugs e sugeriram melhorias
 
