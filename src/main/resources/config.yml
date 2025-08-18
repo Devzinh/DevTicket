@@ -1,0 +1,46 @@
+# Configurações de Tickets
+tickets:
+  max-per-player: 5
+  cooldown-seconds: 300
+  auto-close-days: 7
+  categories:
+    - "Suporte Técnico"
+    - "Denúncia"
+    - "Sugestão"
+    - "Bug Report"
+    - "Outros"
+  priorities:
+    - "Baixa"
+    - "Média"
+    - "Alta"
+    - "Urgente"
+
+# Configurações de Notificações
+notifications:
+  discord:
+    enabled: false
+    webhook-url: "" #Webhook do seu discord aqui!
+  staff-alerts:
+    new-ticket: true
+    ticket-updated: true
+    old-tickets: true
+    old-ticket-days: 3
+
+# Permissões
+permissions:
+  create-ticket: "devticket.create"
+  view-own: "devticket.view.own"
+  view-all: "devticket.view.all"
+  manage: "devticket.manage"
+  admin: "devticket.admin"
+
+# Mensagens (Personalizáveis)
+messages:
+  prefix: "&b[DevTicket]&r "
+  no-permission: "&cVocê não tem permissão para usar este comando!"
+  ticket-created: "&aTicket criado com sucesso! ID: &e{id}"
+  ticket-not-found: "&cTicket não encontrado!"
+  max-tickets-reached: "&cVocê já atingiu o limite máximo de tickets ({max})!"
+  cooldown-active: "&cAguarde {time} segundos antes de criar outro ticket!"
+  ticket-closed: "&aTicket #{id} foi fechado!"
+  ticket-assigned: "&aTicket #{id} foi atribuído a {staff}!"

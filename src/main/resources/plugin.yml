@@ -1,0 +1,63 @@
+name: DevTicket
+version: '1.0.1'
+main: me.devplugins.DevTicket
+api-version: '1.18'
+prefix: [DevTicket]
+authors: [DevPlugins]
+description: Sistema avançado de tickets e suporte para jogadores com armazenamento YAML nativo, categorias, prioridades e interface gráfica moderna. Compatível com Minecraft 1.18-1.21+
+website: https://discord.gg/bdxGxCbqCj
+
+commands:
+  ticket:
+    description: Sistema completo de tickets - criar, visualizar, gerenciar
+    usage: |
+      /<command> - Abrir menu principal
+      /<command> create <categoria> <título> [descrição] - Criar ticket
+      /<command> list [jogador] - Listar tickets
+      /<command> view <id> - Ver detalhes do ticket
+      /<command> close <id> [motivo] - Fechar ticket (staff)
+      /<command> assign <id> <staff> - Atribuir ticket (staff)
+      /<command> reopen <id> - Reabrir ticket (staff)
+      /<command> comment <id> <mensagem> - Adicionar comentário
+      /<command> stats - Ver estatísticas (admin)
+      /<command> reload - Recarregar configuração (admin)
+    aliases: [tickets, suporte, support]
+    permission: devticket.create
+    permission-message: §cVocê não tem permissão para usar este comando!
+
+permissions:
+  devticket.*:
+    description: Acesso completo ao DevTicket
+    children:
+      devticket.create: true
+      devticket.view.own: true
+      devticket.view.all: true
+      devticket.manage: true
+      devticket.admin: true
+    default: op
+  
+  devticket.create:
+    description: Permite criar tickets
+    default: true
+  
+  devticket.view.own:
+    description: Permite ver próprios tickets
+    default: true
+  
+  devticket.view.all:
+    description: Permite ver tickets de outros jogadores
+    default: op
+  
+  devticket.manage:
+    description: Permite gerenciar tickets (staff)
+    children:
+      devticket.create: true
+      devticket.view.own: true
+      devticket.view.all: true
+    default: op
+  
+  devticket.admin:
+    description: Acesso administrativo completo
+    children:
+      devticket.manage: true
+    default: op
