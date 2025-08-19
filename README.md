@@ -3,7 +3,6 @@
 ![DevTicket Logo](https://img.shields.io/badge/DevTicket-v1.0.1-blue.svg)
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.18--1.21+-green.svg)
 ![Spigot](https://img.shields.io/badge/Spigot-Compatible-orange.svg)
-![Paper](https://img.shields.io/badge/Paper-Compatible-yellow.svg)
 
 ## Descrição
 
@@ -43,7 +42,7 @@ O **DevTicket** é um sistema avançado de tickets e suporte para servidores de 
 
 ### Pré-requisitos
 - **Servidor Minecraft** versão 1.18 ou superior
-- **Spigot, Paper ou fork compatível**
+- **Spigot ou fork compatível**
 - **Java 17** ou superior
 
 ### Passos de Instalação
