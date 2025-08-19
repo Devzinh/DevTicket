@@ -296,7 +296,7 @@ SOFTWARE.
 
 **DevTicket v1.0.1** - Sistema Avançado de Tickets para Minecraft
 
-[Discord](https://discord.gg/bdxGxCbqCj) • [GitHub](https://github.com/DevPlugins/DevTicket) • [Documentação](https://github.com/DevPlugins/DevTicket/wiki)
+[Discord](https://discord.gg/bdxGxCbqCj) • [GitHub](https://github.com/Devzinh/DevTicket) • [Documentação](https://github.com/DevPlugins/DevTicket/wiki)
 
 *Desenvolvido com ❤️ pela equipe DevPlugins*
 
